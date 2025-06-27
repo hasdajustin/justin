@@ -6,3 +6,6 @@ def home(request):
 
 def portfolio(request):
     return render(request, 'core/portfolio.html')
+
+def contact(request):
+    return render(request, 'core/contact.html')

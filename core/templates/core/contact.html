@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center">Contact Me</h1>
+    <hr>
+
+    <div class="row align-items-center g-4">
+        
+        <!-- Contact Form -->
+        <div class="col-lg-7 col-md-12">
+            <div class="shadow p-4 rounded bg-white">
+                <h5 class="mb-3"><i class="fa-solid fa-comment-dots me-2"></i>Say Hello!</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Type your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-outline-dark"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-5 col-md-12">
+            <div class="p-4">
+                <h5 class="mb-3"><i class="fa-solid fa-paper-plane me-2 me-2"></i>Get in Touch</h5>
+                <p><i class="fa-solid fa-envelope me-2"></i> <strong>Email:</strong> matheusjustinhasda@gmail.com</p>
+                <p><i class="fa-solid fa-phone me-2"></i> <strong>Phone:</strong> +8801886536408</p>
+                <p><i class="fa-solid fa-location-dot me-2"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
+                <div class="mt-4">
+                    <h6 class="mb-3">Follow Me</h6>
+                    <a href="https://facebook.com" class="text-dark me-2 fs-5" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com" class="text-dark me-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="text-dark me-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com" class="text-dark me-2 fs-5" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}
