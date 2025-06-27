@@ -2,8 +2,88 @@
 
 {% block content %}
 {% load static %}
-<div class="container">
-    <h1>Hello World!</h1>
+<div class="container mt-5">
+    <!-- Home Header -->
+    <div class="row align-items-center my-5">
+        <!-- Left Column: Profile Image -->
+        <div class="col-lg-3 col-md-5 col-sm-12 text-center mb-4 mb-md-0">
+            <img src="{% static 'images/justin.jpg' %}" class="img-fluid rounded shadow" alt="Profile Image">
+        </div>
+
+        <!-- Right Column: About Content -->
+        <div class="col-lg-9 col-md-7 col-sm-12">
+
+            <div class="about">
+                <h2>Hello World!</h2>
+                <h1 class="mb-3">Matheus Justin Hasda</h1>
+                <p>
+                    I'm a passionate <strong>Web Designer</strong> & <strong>Developer</strong>.
+                    I enjoy building responsive, user-friendly, and real-world web solutions.
+                </p>
+                <p>
+                    I love exploring new technologies, experimenting with design trends, and solving problems creatively. 
+                    Currently focused on building full-stack Django projects.
+                </p>
+            </div>
+
+            <div class="skills">
+                <div class="row g-4">
+
+                    <!-- Frontend -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bg-white rounded h-100">
+                            <h6><i class="fa-solid fa-code me-2"></i>Language</h6>
+                            <hr>
+                            <ul class="list-unstyled ps-0">
+                                <li>Python</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Framework -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bg-white rounded h-100">
+                            <h6><i class="fa-solid fa-layer-group me-2"></i>Framework</h6>
+                            <hr>
+                            <ul class="list-unstyled ps-0">
+                                <li>Django REST Framework</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bg-white rounded h-100">
+                            <h6><i class="fa-solid fa-terminal me-2"></i>Backend</h6>
+                            <hr>
+                            <ul class="list-unstyled ps-0">
+                                <li>Django</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bg-white rounded h-100">
+                            <h6><i class="fa-solid fa-database me-2"></i>Database</h6>
+                            <hr>
+                            <ul class="list-unstyled ps-0">
+                                <li>SQLite (Dev)</li>
+                                <li>PostgreSQL (Production)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
 
 {% endblock content %}

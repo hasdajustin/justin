@@ -1,3 +1,13 @@
-h1{
-    color: rgb(255, 0, 0)!important;
+:root {
+  /* --main-color: #121212; */
+}
+body{
+    font-family: "Monda", sans-serif!important;
+}
+nav a{
+    color: var(--primary-text-color)!important;
+    font-weight: 500!important;
+}
+nav a:hover{
+    text-shadow: 2px 2px 0 #bcbcbc, 1px 1px 0 #9c9c9c;
 }
