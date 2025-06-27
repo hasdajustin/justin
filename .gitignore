@@ -1,0 +1,26 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Env files
+.env
+
+# SQLite database file
+db.sqlite3
+
+# Django static and media files
+/static/
+/media/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS files
+.DS_Store
+
+# Windows files
+Thumbs.db
