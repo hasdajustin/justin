@@ -15,3 +15,53 @@ nav a:hover{
 .container #home{
     margin: 103px 0px!important;
 }
+
+
+/*--------- Media Query -------------*/
+@media (max-width: 575.98px) {
+    .container #home {
+        margin: 20px 0px !important;
+    }
+    #home img {
+        width: 50%;
+    }
+    #home h1,h2{
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container #home {
+        margin: 20px 0px !important;
+    }
+    
+    #home img {
+        width: 60%;
+    }
+    #home h1,h2{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container #home {
+        margin: 15px 0px !important;
+        text-align: center;
+    }
+    #home .col-lg-3,
+    #home .col-lg-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #home img {
+        width: 30%;
+        margin: 20px 0px;
+    }
+
+    #home .skills .col-md-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+
