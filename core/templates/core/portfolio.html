@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="container my-5">
+    <h1 class="text-center">Portfolio</h1>
+    <hr>
+    <div class="row g-4">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="shadow p-4 rounded h-100">
+                <h5>Project 1</h5>
+                <h6>Title: Github-Profile-Finder</h6>
+                <p class="text-muted">GitHub profile lookup tool built with HTML, CSS, Bootstrap, JavaScript and Font Awesome.</p>
+                <a href="https://github.com/hasdajustin/Github-Profile-Finder" class="btn btn-sm btn-outline-dark mt-2">Preview<i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+                <a href="https://hasdajustin.github.io/Github-Profile-Finder/" class="btn btn-sm btn-outline-dark mt-2">live<i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="shadow p-4 rounded h-100">
+                <h5>Project 2</h5>
+                <h6>Title: donateBlood-webApp</h6>
+                <p class="text-muted">A Django-based web application that helps users register as blood donors, search for available donors, and manage blood donation records.</p>
+                <a href="https://github.com/hasdajustin/donateBlood-webApp" class="btn btn-sm btn-outline-dark mt-2">Preview<i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="shadow p-4 rounded h-100">
+                <h5>Project 3</h5>
+                <h6>Title: QUICK-FIND-MOVIES</h6>
+                <p class="text-muted">QuickFindMovies is a simple Django web application that allows users to browse and filter movies by genre, year, and country from an Excel file.</p>
+                <a href="https://github.com/hasdajustin/QUICK-FIND-MOVIES" class="btn btn-sm btn-outline-dark mt-2">Preview<i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
