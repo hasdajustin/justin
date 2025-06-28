@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Project
-from .forms import ContactForm
+from .forms import ContactForm,HireRequestForm
 
 # Create your views here.
 def home(request):
@@ -23,4 +23,12 @@ def contact(request):
     return render(request, 'core/contact.html', {'form': form})
 
 def hireme(request):
-    return render(request, 'core/hireme.html')
+    if request.method == 'POST':
+        form = HireRequestForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Thank you for your interest! I will get back to you soon.")
+            return redirect('hireme')
+    else:
+        form = HireRequestForm()
+    return render(request, 'core/hireme.html', {'form': form})
