@@ -1,8 +1,56 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-{% load static %}
-<div class="container">
-    <h1>Hire me</h1>
+<div class="container my-5">
+    <h1 class="text-center">Hire Me</h1>
+    <hr>
+
+    <div class="row align-items-center g-4">
+
+        <!-- Hire Me Form -->
+        <div class="col-lg-7 col-md-12">
+            <div class="shadow p-4 rounded bg-white">
+                <h5 class="mb-3"><i class="fa-solid fa-briefcase me-2"></i>Let’s Work Together!</h5>
+
+                {% if messages %}
+                {% for msg in messages %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ msg }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                {% endfor %}
+                {% endif %}
+
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-sm btn-outline-primary">
+                        <i class="fa-solid fa-handshake me-2"></i>Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Why Hire Me Section -->
+        <div class="col-lg-5 col-md-12">
+            <div class="p-4">
+                <h5 class="mb-3"><i class="fa-solid fa-star me-2"></i>Why Hire Me?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Expert in Django & Frontend (HTML, CSS, JS, Bootstrap)</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Production-ready, responsive design</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Experience with full-stack projects</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Reliable communication & timely delivery</li>
+                </ul>
+                <div class="mt-4">
+                    <h6 class="mb-3">Let’s Connect</h6>
+                    <a href="mailto:matheusjustinhasda@gmail.com" class="text-dark me-3 fs-5"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="text-dark me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank" class="text-dark me-3 fs-5"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 {% endblock content %}

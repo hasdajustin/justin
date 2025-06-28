@@ -23,3 +23,14 @@ class ContactMessage(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.subject}"
+    
+class HireRequest(models.Model):
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    project_type = models.CharField(max_length=100)
+    budget = models.CharField(max_length=50, blank=True)
+    message = models.TextField()
+    submitted_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Hire Request from {self.full_name} ({self.email})"
