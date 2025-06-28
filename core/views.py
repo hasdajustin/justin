@@ -21,3 +21,6 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'core/contact.html', {'form': form})
+
+def hireme(request):
+    return render(request, 'core/hireme.html')
